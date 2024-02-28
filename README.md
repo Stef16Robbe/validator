@@ -98,10 +98,10 @@ First, one needs to create a validation function.
 func notZZ(v interface{}, param string) error {
     st := reflect.ValueOf(v)
     if st.Kind() != reflect.String {
-    return errors.New("notZZ only validates strings")
+        return errors.New("notZZ only validates strings")
     }
     if st.String() == "ZZ" {
-    return errors.New("value cannot be ZZ")
+        return errors.New("value cannot be ZZ")
     }
     return nil
 }
