@@ -73,7 +73,7 @@ type TestStruct struct {
 		D *string `validate:"nonzero"`
 	}
 	D *Simple `validate:"nonzero"`
-	E I       `validate:nonzero`
+	E I       `validate:"nonzero"`
 }
 
 type TestCompositedStruct struct {
